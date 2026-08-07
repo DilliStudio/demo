@@ -1,0 +1,124 @@
+{
+    "profile": {
+        "name": "DilliRaja S",
+        "tagline": "Web Developer & Designer",
+        "bio": "Passionate about creating beautiful, functional websites and digital experiences. Specializing in modern web technologies and creative design solutions.",
+        "logo": "DR",
+        "phone": "+91 9500388259",
+        "email": "dilliraja@example.com",
+        "whatsapp": "919500388259",
+        "profileImage": "",
+        "social": {
+            "instagram": "#",
+            "facebook": "#",
+            "linkedin": "#",
+            "naukri": "#",
+            "twitter": "#",
+            "github": "#"
+        },
+        "stats": {
+            "projects": "50",
+            "clients": "30",
+            "years": "3"
+        },
+        "copyright": "© 2026 Dilliraja S",
+        "website": "https://dilliraja.lovable.app"
+    },
+    "admin": {
+        "username": "dilli",
+        "password": "illid",
+        "maxEdits": -1
+    },
+    "settings": {
+        "theme": "dark",
+        "accentColor": "#6c5ce7",
+        "soundEnabled": true
+    },
+    "services": [
+        {
+            "id": "logo",
+            "title": "Logo Design",
+            "icon": "fas fa-palette",
+            "demos": [
+                {
+                    "title": "Brand Identity Logo",
+                    "description": "Custom logo design that captures your brand essence.",
+                    "image": "https://via.placeholder.com/400x250/6c5ce7/ffffff?text=Logo+Design"
+                }
+            ]
+        },
+        {
+            "id": "website",
+            "title": "Responsive Website Builder",
+            "icon": "fas fa-code",
+            "demos": [
+                {
+                    "title": "Static Website",
+                    "description": "Clean, fast-loading websites.",
+                    "image": "https://via.placeholder.com/400x250/00cec9/ffffff?text=Static",
+                    "subs": [
+                        { "title": "Single Page", "desc": "Landing pages" },
+                        { "title": "Multi Page", "desc": "Up to 5 pages" }
+                    ]
+                },
+                {
+                    "title": "Dynamic Website",
+                    "description": "Interactive websites with CMS.",
+                    "image": "https://via.placeholder.com/400x250/fd79a8/ffffff?text=Dynamic",
+                    "subs": [
+                        { "title": "WordPress", "desc": "Easy content management" },
+                        { "title": "Custom CMS", "desc": "Tailored solutions" }
+                    ]
+                },
+                {
+                    "title": "Advanced Website",
+                    "description": "Full-stack apps with APIs.",
+                    "image": "https://via.placeholder.com/400x250/6c5ce7/ffffff?text=Advanced",
+                    "subs": [
+                        { "title": "E-Commerce", "desc": "Online stores" },
+                        { "title": "Web App", "desc": "Custom applications" }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "post",
+            "title": "Post Generation",
+            "icon": "fas fa-image",
+            "demos": [
+                {
+                    "title": "Social Media Posts",
+                    "description": "Eye-catching graphics for all platforms.",
+                    "image": "https://via.placeholder.com/400x250/00cec9/ffffff?text=Posts"
+                }
+            ]
+        },
+        {
+            "id": "social-media",
+            "title": "Social Media Management",
+            "icon": "fas fa-bullhorn",
+            "demos": [
+                {
+                    "title": "Complete Social Handling",
+                    "description": "Content creation, scheduling, and analytics.",
+                    "image": "https://via.placeholder.com/400x250/fd79a8/ffffff?text=Social"
+                }
+            ]
+        }
+    ],
+    "pricing": [
+        { "value": "300", "label": "₹300 - Website with Free Domain (One Time)" },
+        { "value": "500", "label": "₹500 - Plus Custom Design" },
+        { "value": "1000", "label": "₹1000 - Static Website" },
+        { "value": "3000", "label": "₹3000 - Static + Own Domain" },
+        { "value": "5000", "label": "₹5000 - Static + Custom Design" },
+        { "value": "5000-ecomm", "label": "₹5000 - E-Commerce Website" },
+        { "value": "7000", "label": "₹7000 - E-Commerce + Admin Panel" },
+        { "value": "10000", "label": "₹10000 - E-Commerce + Custom + Admin + Domain" },
+        { "value": "10000-adv", "label": "₹10000 - Advanced Website" },
+        { "value": "12000", "label": "₹12000 - Advanced + Own Domain" },
+        { "value": "15000", "label": "₹15000 - Advanced + Domain + Admin + Email + Custom" },
+        { "value": "20000", "label": "₹20000 - More Products" }
+    ],
+    "links": []
+}
