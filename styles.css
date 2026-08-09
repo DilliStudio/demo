@@ -408,27 +408,6 @@ body {
     color: var(--text-secondary);
 }
 
-.service-arrow {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    width: 28px;
-    height: 28px;
-    background: rgba(108, 92, 231, 0.15);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    color: var(--accent);
-    transition: all 0.3s;
-}
-
-.service-card:hover .service-arrow {
-    background: var(--gradient);
-    color: white;
-}
-
 /* Stats Section */
 .stats-section {
     display: flex;

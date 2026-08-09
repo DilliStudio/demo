@@ -1,6 +1,6 @@
 // Default Profile Data (fallback)
 const defaultProfile = {
-    name: 'DilliRaja S',
+    name: 'Demo',
     tagline: 'Web Developer & Designer',
     bio: 'Passionate about creating beautiful, functional websites and digital experiences. Specializing in modern web technologies and creative design solutions.',
     logo: 'DR',
@@ -130,7 +130,6 @@ class ProfileManager {
                         <div class="service-icon-wrap"><i class="${s.icon || 'fas fa-star'}"></i></div>
                         <h3>${s.title}</h3>
                         <p>${s.demos?.[0]?.title || 'Service'}</p>
-                        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
                     </div>
                 `).join('');
             }
@@ -970,7 +969,6 @@ class SettingsSystem {
                         <div class="service-icon-wrap"><i class="${s.icon || 'fas fa-star'}"></i></div>
                         <h3>${s.title}</h3>
                         <p>${s.demos?.[0]?.title || 'Service'}</p>
-                        <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
                     </div>
                 `).join('');
             }
@@ -1209,4 +1207,4 @@ const statsSection = document.querySelector('.stats-section');
 if (statsSection) observer.observe(statsSection);
 
 document.addEventListener('touchstart', () => {}, { passive: true });
-console.log('DilliRaja S Portfolio Loaded!');
+console.log('Demo Portfolio Loaded!');
