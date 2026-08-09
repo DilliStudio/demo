@@ -10,7 +10,7 @@ const defaultProfile = {
         profileImage: '',
         social: { instagram: '#', facebook: '#', linkedin: '#', naukri: '#', twitter: '#', github: '#', youtube: '#', whatsapp: '#', telegram: '#' },
     stats: { projects: '50', clients: '30', years: '3' },
-    copyright: '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>',
+    copyright: '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">DilliStudio</a>',
     website: 'https://dilliraja.lovable.app',
     services: [],
     pricing: [],
@@ -116,7 +116,7 @@ class ProfileManager {
         // Footer
         if (d.copyright || d.website) {
             document.querySelectorAll('.footer-content p').forEach(el => {
-                el.innerHTML = `${d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>'}`;
+                el.innerHTML = `${d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">DilliStudio</a>'}`;
             });
         }
 
@@ -640,7 +640,7 @@ class SettingsSystem {
         this.setVal('#settingClients', d.stats?.clients || '30');
         this.setVal('#settingYears', d.stats?.years || '3');
         // Footer
-        this.setVal('#settingCopyright', d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>');
+        this.setVal('#settingCopyright', d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">DilliStudio</a>');
         this.setVal('#settingWebsite', d.website || 'https://dilliraja.lovable.app');
         // Services
         const services = d.services && d.services.length > 0 ? d.services : (adminConfig?.services || []);
@@ -921,7 +921,7 @@ class SettingsSystem {
             years: document.getElementById('settingYears')?.value || '3'
         };
         // Footer
-        d.copyright = document.getElementById('settingCopyright')?.value || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>';
+        d.copyright = document.getElementById('settingCopyright')?.value || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">DilliStudio</a>';
         d.website = document.getElementById('settingWebsite')?.value || 'https://dilliraja.lovable.app';
         // Services
         d.services = this.collectServices();
@@ -958,7 +958,7 @@ class SettingsSystem {
         });
         // Update footer
         document.querySelectorAll('.footer-content p').forEach(el => {
-            el.innerHTML = `${d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>'}`;
+            el.innerHTML = `${d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">DilliStudio</a>'}`;
         });
         // Update services on home page
         if (d.services && d.services.length > 0) {
