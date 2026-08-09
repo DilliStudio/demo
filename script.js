@@ -8,9 +8,9 @@ const defaultProfile = {
     email: 'dilliraja@example.com',
     whatsapp: '919500388259',
         profileImage: '',
-        social: { instagram: '#', facebook: '#', linkedin: '#', naukri: '#', twitter: '#', github: '#' },
+        social: { instagram: '#', facebook: '#', linkedin: '#', naukri: '#', twitter: '#', github: '#', youtube: '#', whatsapp: '#', telegram: '#' },
     stats: { projects: '50', clients: '30', years: '3' },
-    copyright: '© 2026 Dilliraja S',
+    copyright: '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>',
     website: 'https://dilliraja.lovable.app',
     services: [],
     pricing: [],
@@ -116,7 +116,7 @@ class ProfileManager {
         // Footer
         if (d.copyright || d.website) {
             document.querySelectorAll('.footer-content p').forEach(el => {
-                el.innerHTML = `${d.copyright || '© 2026 Dilliraja S'} - <a href="${d.website || '#'}" target="_blank">${d.website || 'dilliraja.lovable.app'}</a>`;
+                el.innerHTML = `${d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>'}`;
             });
         }
 
@@ -373,12 +373,15 @@ class CategorySystem {
         const socialSection = document.getElementById('social-section');
         if (!socialSection) return;
         let html = '<div class="social-links">';
-        if (links.instagram && links.instagram !== '#') html += `<a href="${links.instagram}" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>`;
-        if (links.facebook && links.facebook !== '#') html += `<a href="${links.facebook}" class="social-link facebook" target="_blank"><i class="fab fa-facebook"></i><span>Facebook</span></a>`;
-        if (links.linkedin && links.linkedin !== '#') html += `<a href="${links.linkedin}" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>`;
-        if (links.naukri && links.naukri !== '#') html += `<a href="${links.naukri}" class="social-link naukri" target="_blank"><i class="fas fa-briefcase"></i><span>Naukri</span></a>`;
-        if (links.twitter && links.twitter !== '#') html += `<a href="${links.twitter}" class="social-link twitter" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a>`;
-        if (links.github && links.github !== '#') html += `<a href="${links.github}" class="social-link github" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>`;
+        html += `<a href="${links.instagram || '#'}" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>`;
+        html += `<a href="${links.facebook || '#'}" class="social-link facebook" target="_blank"><i class="fab fa-facebook"></i><span>Facebook</span></a>`;
+        html += `<a href="${links.linkedin || '#'}" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>`;
+        html += `<a href="${links.naukri || '#'}" class="social-link naukri" target="_blank"><i class="fas fa-briefcase"></i><span>Naukri</span></a>`;
+        html += `<a href="${links.twitter || '#'}" class="social-link twitter" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a>`;
+        html += `<a href="${links.github || '#'}" class="social-link github" target="_blank"><i class="fab fa-github"></i><span>GitHub</span></a>`;
+        html += `<a href="${links.youtube || '#'}" class="social-link youtube" target="_blank"><i class="fab fa-youtube"></i><span>YouTube</span></a>`;
+        html += `<a href="${links.whatsapp || '#'}" class="social-link whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>`;
+        html += `<a href="${links.telegram || '#'}" class="social-link telegram" target="_blank"><i class="fab fa-telegram"></i><span>Telegram</span></a>`;
         customLinks.forEach(l => {
             html += `<a href="${l.url}" class="social-link" target="_blank"><i class="fas fa-link"></i><span>${l.label}</span></a>`;
         });
@@ -629,13 +632,16 @@ class SettingsSystem {
             this.setVal('#settingNaukri', d.social.naukri);
             this.setVal('#settingTwitter', d.social.twitter);
             this.setVal('#settingGithub', d.social.github);
+            this.setVal('#settingYoutube', d.social.youtube);
+            this.setVal('#settingWhatsappSocial', d.social.whatsapp);
+            this.setVal('#settingTelegram', d.social.telegram);
         }
         // Stats
         this.setVal('#settingProjects', d.stats?.projects || '50');
         this.setVal('#settingClients', d.stats?.clients || '30');
         this.setVal('#settingYears', d.stats?.years || '3');
         // Footer
-        this.setVal('#settingCopyright', d.copyright || '© 2026 Dilliraja S');
+        this.setVal('#settingCopyright', d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>');
         this.setVal('#settingWebsite', d.website || 'https://dilliraja.lovable.app');
         // Services
         const services = d.services && d.services.length > 0 ? d.services : (adminConfig?.services || []);
@@ -904,7 +910,10 @@ class SettingsSystem {
             linkedin: document.getElementById('settingLinkedin')?.value || '#',
             naukri: document.getElementById('settingNaukri')?.value || '#',
             twitter: document.getElementById('settingTwitter')?.value || '#',
-            github: document.getElementById('settingGithub')?.value || '#'
+            github: document.getElementById('settingGithub')?.value || '#',
+            youtube: document.getElementById('settingYoutube')?.value || '#',
+            whatsapp: document.getElementById('settingWhatsappSocial')?.value || '#',
+            telegram: document.getElementById('settingTelegram')?.value || '#'
         };
         // Stats
         d.stats = {
@@ -913,7 +922,7 @@ class SettingsSystem {
             years: document.getElementById('settingYears')?.value || '3'
         };
         // Footer
-        d.copyright = document.getElementById('settingCopyright')?.value || '© 2026 Dilliraja S';
+        d.copyright = document.getElementById('settingCopyright')?.value || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>';
         d.website = document.getElementById('settingWebsite')?.value || 'https://dilliraja.lovable.app';
         // Services
         d.services = this.collectServices();
@@ -950,7 +959,7 @@ class SettingsSystem {
         });
         // Update footer
         document.querySelectorAll('.footer-content p').forEach(el => {
-            el.innerHTML = `${d.copyright || '© 2026 Dilliraja S'} - <a href="${d.website || '#'}" target="_blank">${d.website || 'dilliraja.lovable.app'}</a>`;
+            el.innerHTML = `${d.copyright || '© 2026 demo. All Rights Reserved. developed by <a href="https://dillistudio.github.io/raj" target="_blank">dilliraja S</a>'}`;
         });
         // Update services on home page
         if (d.services && d.services.length > 0) {

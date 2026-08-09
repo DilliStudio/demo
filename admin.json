@@ -14,14 +14,17 @@
             "linkedin": "#",
             "naukri": "#",
             "twitter": "#",
-            "github": "#"
+            "github": "#",
+            "youtube": "#",
+            "whatsapp": "#",
+            "telegram": "#"
         },
         "stats": {
             "projects": "50",
             "clients": "30",
             "years": "3"
         },
-        "copyright": "© 2026 Dilliraja S",
+        "copyright": "© 2026 demo. All Rights Reserved. developed by <a href=\"https://dillistudio.github.io/raj\" target=\"_blank\">dilliraja S</a>",
         "website": "https://dilliraja.lovable.app"
     },
     "admin": {

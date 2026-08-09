@@ -722,6 +722,9 @@ body {
 .social-link.naukri { background: #0afb98; color: #1a1a2e; }
 .social-link.twitter { background: #1da1f2; }
 .social-link.github { background: #333; }
+.social-link.youtube { background: #ff0000; }
+.social-link.whatsapp { background: #25d366; }
+.social-link.telegram { background: #0088cc; }
 
 .social-link i {
     font-size: 1.4rem;
@@ -1064,6 +1067,12 @@ body {
     
     .services-grid {
         gap: 16px;
+    }
+}
+
+@media (min-width: 480px) {
+    .social-links {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
